@@ -5,6 +5,7 @@ class GamesController < ApplicationController
   def gen_grid(num)
     a = []
     num.times { a << ('A'..'Z').to_a.sample }
+    a << ['A', 'E', 'I', 'O', 'U', 'Y'].sample
     a
   end
 
@@ -22,7 +23,7 @@ class GamesController < ApplicationController
   end
 
   def new
-    @letters = gen_grid(9)
+    @letters = gen_grid(8)
   end
 
   def score
