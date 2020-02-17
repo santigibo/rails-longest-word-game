@@ -1,0 +1,87 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap');
+
+body {
+  font-family: 'Bree Serif', serif;
+}
+
+h1 {
+  font-size: 56px;
+}
+
+form {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 0 grey;
+  .input {
+    flex-grow: 1;
+    opacity: 0.7;
+    padding: 16px;
+    font-size: 32px;
+    border-bottom-left-radius: 8px;
+    border: 1px solid grey;
+  }
+  .btn {
+    background-color: #3397DC;
+    border: none;
+    color: white;
+    padding: 16px;
+    font-size: 32px;
+    border-top-right-radius: 8px;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.grid {
+  display: flex;
+  list-style: none;
+  align-content: space-evenly;
+}
+
+h2 {
+  font-weight: lighter;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin-bottom: 64px;
+}
+
+.result {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+a {
+  font-size: 24px;
+  text-decoration: none;
+  padding: 16px;
+  background-color: black;
+  border-radius: 8px;
+  color: white;
+}
+
+.letter {
+  margin: 8px;
+  width: 90px;
+  height: 90px;
+  background-color: #3397DC;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 0 grey;
+  font-size: 48px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

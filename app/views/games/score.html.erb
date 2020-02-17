@@ -1,0 +1,11 @@
+<h1>Result</h1>
+
+<% if @answer == 0 %>
+  <h3><strong>Congratulations! </strong><%= @word.capitalize %> is a valid English word.</h3>
+<% elsif @answer == 1 %>
+  <h3>Sorry but <strong><%= @word.upcase %></strong> can't be build with <%= @grid.join(', ') %>.</h3>
+<% else %>
+  <h3>Sorry but <strong><%= @word.upcase %></strong> isn't an english word...</h3>
+<% end %>
+
+<%= link_to 'Play new game', new_path %>
